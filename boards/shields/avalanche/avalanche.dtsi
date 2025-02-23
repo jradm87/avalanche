@@ -73,9 +73,7 @@
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <63>;
-        // segment-remap;
-        // com-invdir;
-        // com-sequential;
+        power-save = <% asleep>;  // Habilita economia de energia quando o teclado dormir
         inversion-on;
         prechargep = <0x22>;
     };
