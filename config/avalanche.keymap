@@ -85,20 +85,6 @@
             bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp RIGHT_ARROW>;
             label = "WORKSPACERIGHT";
         };
-
-        p1: p1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp E &kp W &kp Q>;
-            label = "P1";
-        };
-
-        p2: p2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp E &kp W &kp Q &kp I &kp O &kp P>;
-            label = "P2";
-        };
     };
 
     combos {
@@ -127,6 +113,11 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <38 58>;
+        };
+
+        shiftEnter {
+            bindings = <&kp LS(ENTER)>;
+            key-positions = <58 24>;
         };
     };
 
@@ -175,11 +166,11 @@
             // ---------------------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&none             &kp F1  &kp F2        &kp F3            &kp F4  &kp F5                 &kp F6        &kp F7     &kp F8        &kp F9        &kp F10       &kp F11
-&trans            &trans  &trans        &kp SINGLE_QUOTE  &trans  &none                  &kp ASTERISK  &kp N7     &kp N8        &kp N9        &kp PLUS      &kp F12
-&trans            &trans  &kp TILDE     &trans            &trans  &none   &none                        &kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS     &kp GRAVE      &trans
-&kp LEFT_CONTROL  &none   &none         &kp SINGLE_QUOTE  &none   &trans  &trans  &none  &none         &kp HOME   &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp PRINTSCREEN
-                  &trans  &kp LEFT_ALT  &trans            &trans  &trans                 &trans        &kp END    &trans        &trans        &kp NUMBER_0
+&none             &kp F1  &kp F2           &kp F3              &kp F4  &kp F5                 &kp F6        &kp F7     &kp F8        &kp F9        &kp F10       &kp F11
+&trans            &trans  &macro_vim_save  &kp SINGLE_QUOTE    &trans  &none                  &kp ASTERISK  &kp N7     &kp N8        &kp N9        &kp PLUS      &kp F12
+&trans            &trans  &kp TILDE        &macro_vim_replace  &trans  &none   &none                        &kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS     &kp GRAVE      &trans
+&kp LEFT_CONTROL  &none   &none            &kp SINGLE_QUOTE    &none   &trans  &trans  &none  &none         &kp HOME   &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp PRINTSCREEN
+                  &trans  &kp LEFT_ALT     &trans              &trans  &trans                 &trans        &kp END    &trans        &trans        &kp NUMBER_0
             >;
         };
 
@@ -195,11 +186,11 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans               &trans          &trans          &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans               &trans          &trans          &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                       &trans          &trans           &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &p2     &p1  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                &trans          &trans          &trans           &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                &trans          &trans          &trans           &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                        &trans          &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &Feitep  &p1  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
             >;
         };
     };
