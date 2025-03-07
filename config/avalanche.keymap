@@ -45,7 +45,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <5>;
-            bindings = <&kp ESCAPE &kp COLON &kp W &kp ENTER>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp Q &kp EXCLAMATION &kp ENTER>;
             label = "VIM_SAVE";
         };
 
