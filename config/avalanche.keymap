@@ -129,6 +129,11 @@
             bindings = <&kp LS(ENTER)>;
             key-positions = <58 45>;
         };
+
+        mouse {
+            bindings = <&mo 4>;
+            key-positions = <24 25>;
+        };
     };
 
     keymap {
