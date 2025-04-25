@@ -1,0 +1,27 @@
+config SHIELD_AVALANCHE_DONGLE
+    bool "Avalanche Dongle"
+    select SHIELD_AVALANCHE
+    select ZMK_SPLIT
+    select ZMK_BLE
+    select ZMK_BLE_SPLIT
+    select ZMK_BLE_PERIPHERAL
+    select ZMK_USB
+    select ZMK_USB_SPLIT
+    select ZMK_USB_PERIPHERAL
+    select USB
+    select USB_DEVICE_STACK
+    select BT
+    select BT_PERIPHERAL
+    select BT_DEVICE_NAME
+    select USB_DEVICE_PRODUCT
+    select ZMK_SPLIT_ROLE_PERIPHERAL
+
+if SHIELD_AVALANCHE_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Avalanche Dongle"
+
+config ZMK_SPLIT_ROLE_PERIPHERAL
+    default y
+
+endif
