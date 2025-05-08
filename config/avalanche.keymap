@@ -134,6 +134,11 @@
             bindings = <&mo 4>;
             key-positions = <24 25>;
         };
+
+        enter3 {
+            bindings = <&kp ENTER>;
+            key-positions = <45 44>;
+        };
     };
 
     keymap {
