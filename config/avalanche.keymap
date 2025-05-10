@@ -139,6 +139,11 @@
             bindings = <&kp ENTER>;
             key-positions = <45 44>;
         };
+
+        gamer {
+            bindings = <&tog 5>;
+            key-positions = <47 5>;
+        };
     };
 
     keymap {
@@ -211,6 +216,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans          &trans           &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans     &kp N1     &kp N2  &kp N3     &kp N4     &kp N5                     &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&kp TAB    &kp Q      &kp W   &kp E      &kp R      &kp T                      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp LSHFT  &kp A   &kp S      &kp D      &kp F      &kp G                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp Z      &kp X   &kp C      &kp V      &kp B      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+           &kp DEL    &mo 2   &kp SPACE  &kp SPACE  &kp SPACE                  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
