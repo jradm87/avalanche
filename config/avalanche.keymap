@@ -173,9 +173,9 @@
 
         CONFIG {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &trans              &trans                           &rgb_ug RGB_COLOR_HSB(308,100,50)  &rgb_ug RGB_COLOR_HSB(334,100,50)  &rgb_ug RGB_COLOR_HSB(121,100,48)  &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3        &bt BT_SEL 4                     &rgb_ug RGB_COLOR_HSB(308,100,50)  &rgb_ug RGB_COLOR_HSB(334,100,50)  &rgb_ug RGB_COLOR_HSB(121,100,48)  &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
 &trans      &kp HOME      &kp UP_ARROW    &kp END         &macro_vim_replace  &trans                           &rgb_ug RGB_COLOR_HSB(0,100,50)    &rgb_ug RGB_COLOR_HSB(182,100,50)  &rgb_ug RGB_COLOR_HSB(251,100,49)  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-&trans      &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT           &trans           &trans                                             &rgb_ug RGB_COLOR_HSB(62,100,50)   &trans                             &trans           &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &tog 0
+&trans      &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT           &trans           &trans                                             &rgb_ug RGB_COLOR_HSB(62,100,50)   &rgb_ug RGB_COLOR_HSB(278,100,43)  &trans           &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &tog 0
 &trans      &trans        &trans          &trans          &trans              &trans           &trans  &trans  &trans                             &trans                             &rgb_ug RGB_EFR                    &rgb_ug RGB_EFF  &trans           &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
             &trans        &trans          &trans          &trans              &macro_vim_save                  &rgb_ug RGB_BRD                    &trans                             &rgb_ug RGB_BRI                    &trans           &trans
             >;
